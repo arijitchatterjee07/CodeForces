@@ -3,16 +3,13 @@ public class Main
 {
     private static long applyOperation(long x) 
     {
-        for (int i = 0; i < 40; i++) 
-        {
-            x = Math.abs(x - 2);
-        }
-        return x;
+        return x; 
     }
     public static void main(String[] args) 
     {
         Scanner scanner = new Scanner(System.in);
         int t = scanner.nextInt();
+        
         while (t-- > 0) 
         {
             int n = scanner.nextInt();
@@ -39,7 +36,6 @@ public class Main
                     maxFreq = currentFreq;
                 }
             }
-            
             System.out.println(maxFreq);
         }
         scanner.close();
